@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: bands-api-client
+server:
+  port: 9090
+  servlet:
+    context-path: /bands-api-client
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8787/eureka
+  instance:
+    preferIpAddress: true
